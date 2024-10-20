@@ -8,8 +8,20 @@ import os
 import json
 import shutil
 import re
+from fastapi.middleware.cors import CORSMiddleware
+
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 load_dotenv()
 
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
@@ -21,7 +33,6 @@ llm = ChatGoogleGenerativeAI(
     handle_parsing_errors=True
 )
 
-# Function to extract text from PDF
 def extract_text_from_pdf(file_path):
     reader = PdfReader(file_path)
     text = ""
@@ -140,7 +151,7 @@ async def upload_resume(file: UploadFile = File(...)):
                 parsed_data = extracted_json
             else:
                 raise HTTPException(status_code=500, detail="Failed to parse LLM response as JSON")
-
+        # print(parsed_data)
         return JSONResponse(content=parsed_data)
 
     except ValueError as e:
