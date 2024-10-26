@@ -108,3 +108,4 @@ If you want to contact me, you can reach me at `your. sonpalparmar20@gmail.com`.
 - [React](https://reactjs.org/)
 - [FastAPI](https://fastapi.tiangolo.com/)
 - [Docker](https://www.docker.com/)
+- [GenAI](https://python.langchain.com/api_reference/google_genai/)
