@@ -21,6 +21,7 @@ Resume Parser is a web application that allows users to upload resume files (PDF
 - Python
 - FastAPI
 - Docker
+- GenAI
 
 ## Prerequisites
 
