@@ -126,4 +126,4 @@ Contributions are welcome!
 
 ---
 
-**Made with ❤️ by SONPAL PARMAR**
+**Made with ❤️ by Sonpal Parmar**
