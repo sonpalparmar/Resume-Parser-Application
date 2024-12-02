@@ -1,6 +1,6 @@
 # 📄 Resume Parser 🤖
 
-## 🌟 Overview
+## 🌟 Overview 
 
 **Resume Parser** is an intelligent web application designed to streamline the resume parsing process. By leveraging modern web technologies and AI-powered parsing, this tool helps professionals and recruiters extract structured information from resume files quickly and efficiently.
 
